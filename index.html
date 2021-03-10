@@ -5,24 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="./script.js"></script>
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; opacity: 0;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  We are launching soon!
+  <div id="tot">
 
-  Subscribe and get notified
+    
+    <!-- LOGO  -->
+    <img src="./images/logo.svg" class="logo">
+    
+    <!-- TEXT  -->
+    <div class="text">
+      <h1 class="title">We are launching <strong>soon!</strong></h1>
+      <p class="desc">Subscribe and get notified</p>
+    </div>
 
-  Notify Me
 
-  &copy; Copyright Ping. All rights reserved.
+
+    <!-- EMAIL  -->
+    <div class="daForm">
+      <form class="email">
+        <input class="adress" type="text" value="Your email adress..." onfocus="if(this.value == 'Your email adress...') {this.value = ''}">
+        <input class="submit" type="submit" value="Notify Me">
+      </form>
+      <p class="wrong" style="opacity:0;"><i>Please provide a valid email adress</i></p>
+    </div>
+
+
+    <!-- PREVIEW  -->
+    <img class="preview" src="./images/illustration-dashboard.png" >
+    
+    <!-- SHARE  -->
+    <div class="share">
+      <img src="./images/fb.svg" class="fb">
+      <img src="./images/twit.svg" class="twit">
+      <img src="./images/insta.svg" class="src">
+    </div>
+
+    <!-- USELESS SHIT  -->
+    <p class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
+    
+  </div>
+  
+  
+
 
   <footer>
     <p class="attribution">
@@ -30,5 +71,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  
 </body>
 </html>

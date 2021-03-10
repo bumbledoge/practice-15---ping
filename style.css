@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#tot {
+    display: flex;
+    flex-direction: column;
+
+    height: 650px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 70px;
+}
+.text {
+    text-align: center;
+}
+.title {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+.title strong {
+    color: black;
+}
+
+input {
+    height: 36px;
+    border-radius: 18px;
+}
+.email {
+    display: flex;
+}
+
+
+.adress {
+    border: 1px solid hsl(0, 0%, 59%);
+    color:hsl(0, 0%, 59%);
+
+    width: 230px;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.adress:focus {
+    outline: none;
+}
+
+
+.submit {
+    border: none;
+    width: 120px;
+    margin-left: 20px;
+
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+.submit:focus {
+    outline: none;
+}
+
+.wrong {
+    position: relative;
+    color: red;
+    font-size: 12px;
+
+}
+
+.preview {
+    max-width: 500px;
+
+    box-sizing: border-box;
+    padding: 0px 40px;
+}
+
+.share {
+    width: 200px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
